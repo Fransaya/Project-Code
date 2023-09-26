@@ -4,24 +4,31 @@
 const imagenes=document.querySelectorAll(".imagen");
 const anterior=document.querySelector(".anterior");
 const siguiente=document.querySelector(".siguiente");
+const slide=document.querySelectorAll(".slider");
 
 let index=0
-anterior.addEventListener("click",function(){
-    actualizarCarrusel(index-1);
-})
-siguiente.addEventListener("click",function(){
-    actualizarCarrusel(index+1);
-})
+function MoveLeft(){
+    anterior.addEventListener("click",function(){
+        actualizarCarrusel(index-1);
+    });
+}
+
+function MoveRigth(){
+    siguiente.addEventListener("click",function(){
+        actualizarCarrusel(index+1);
+    });
+}
+
 
 function actualizarCarrusel(newIndex){
     imagenes[index].style.display="none";
-    index=(newIndex+imagenes.length)%imagenes.length;
+    index=(newIndex+imagenes.length)% imagenes.length;
     imagenes[index].style.display="block";
 }
 
 actualizarCarrusel(0);
 
-const buttons=document.querySelectorAll("button[data-dir]");
+const buttons=document.querySelectorAll(`button[data-dir]`);
 buttons.forEach(function(button){
     button.addEventListener("click",function(){
         const direccion=button.getAttribute(`data-dir`);

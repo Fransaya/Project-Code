@@ -25,27 +25,32 @@
     <div class="secImagen-menu">
         <div class="carrusel">
             <div class="imagen">
-                <img src="./imagesFolder/appleM1.webp" alt="" class="product1Apple">
+                <section class="slider">
+                    <img src="./imagesFolder/appleM1.webp" alt="" class="product1Apple">
                 <button class="dirApple" data-dir="./marcas/apple.html">Ver..</button>
-            </div>
-            <div class="imagen">
-                <img src="./imagesFolder/dell.webp" alt="" class="product2Dell">
-                <button class="dirDell" data-dir="./marcas/dell.html">Ver..</button>
-            </div>
-            <div class="imagen">
-                <img src="./imagesFolder/E410KA-EK407W.jpg.webp" alt="" class="product3Asus">
-                <button class="dirAsus" data-dir="./marcas/asus.html">Ver..</button>
-            </div>
-            <div class="imagen">
-                <img src="./imagesFolder/hp240.jpg" alt="" class="product3Hp">
-                <button class="dirDell" data-dir="./marcas/hp.html">Ver..</button>
+                </section>
+                <section class="slider">
+                    <img src="./imagesFolder/dell.webp" alt="" class="product2Dell">
+                    <button class="dirDell" data-dir="./marcas/dell.html">Ver..</button>
+                </section>
+                
+                <section class="slider">
+                    <img src="./imagesFolder/E410KA-EK407W.jpg.webp" alt="" class="product3Asus">
+                    <button class="dirAsus" data-dir="./marcas/asus.html">Ver..</button>
+                </section>
+                
+                <section class="slider">
+                    <img src="./imagesFolder/hp240.jpg" alt="" class="product3Hp">
+                    <button class="dirDell" data-dir="./marcas/hp.html">Ver..</button>
+                </section>
+                
             </div>
         </div>
     </div>
     <!-- Flechas desplazamiento -->
     <div class="flechas">
-        <button class="anterior">Anterior</button>
-        <button class="siguiente">Siguiente</button>
+        <button class="anterior" onclick="MoveLeft()">Anterior</button>
+        <button class="siguiente" onclick="MoveRigth()">Siguiente</button>
     </div>
     
     <div class="pagPrincipal">
