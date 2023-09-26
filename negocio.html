@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compu-Tech</title>
     <link rel="stylesheet" href="negocio.css">
+    <script src="negocio.js"></script>
+    
 </head>
 <body>
     <div class="encabezado">
@@ -17,6 +19,7 @@
                 <a href="./encabezado/WhatsApp.html" class="whatsapp">WhatsApp</a>
             </header>
         </div>
+
     </div>
     <div class="pagPrincipal">
         <div class="side-bar">
@@ -29,31 +32,67 @@
             </nav>
         </div>
     </div>
-    <h3>testeo respotitorio</h3>
+    
     <div class="productos">
         <div class="product1">
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/dell.webp" alt="" class="prodcuto1">
             <h3 class="nProduct1">Dell Insipiron</h3>
-            <button class="informacio">▼</button>
+            <button class="informaciondell" onclick="dropDown()">▼</button>
+            <div class="infoAdicional" id="infoAdd" style="display: none;">
+                <h2 class="modeloDell">Dell Inspiron 3501</h2>
+                <p class="procesador">Procesador: Intel Core I5 1135g7 </p>
+                <p class="ram"> Ram: 12 Gb</p>
+                <p class="resolucion">Resolucion: 1920 x 1080</p>
+                <p class="almacenamiento">Almacenamiento: 256GB SSD </p>
+                <p class="graficos">Graficos: Intel Iris Xe G7 80EUs </p>
+                <h3 class="precioDell">$543.209</h3>
+            </div>
         </div>
         <div class="product2">
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/appleM1.webp" alt="" class="prodcuto1">
             <h3 class="nProduct1">Apple MacBook M1</h3>
-            <button class="informacio">▼</button>
+            <button class="informacionapple" onclick="dropInfoApple()">▼</button>
+            <div class="infoAdicionalApple" id="inforapple" style="display: none;">
+                <h2 class="modeloapple"> MacBook M1</h2>
+                <p class="procesadorApple">Procesador: Apple M1 Chip 8-Nucleos CPU M1</p>
+                <p class="ramapple">Ram: 8Gb </p>
+                <p class="resolucionapple">Resolucion: 2560 x 1664</p>
+                <p class="almacenamientoapple">Almacenaminto: 512 GB</p>
+                <p class="graficosapple">Graficos: GPU de Apple M1</p>
+                <p class="precioapple">$1.999.999</p>
+            </div>
         </div>
         <div class="product3">
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/E410KA-EK407W.jpg.webp" alt="" class="prodcuto1">
             <h3 class="nProduct1">Asus 14 E410Ka</h3>
-            <button class="informacio">▼</button>
+            <button class="informacioAsus" onclick="dropinforAsus()">▼</button>
+            <div class="infor-menu-Asus" id="infoasus" style="display: none;">
+                <h2 class="modeloAsus">Modelo: VivoBook E410KA-EK407W</h2>
+                <p class="procesadorAsus">Procesador: Intel® Pentium® Silver N6000</p>
+                <p class="ram-asus">Ram: 4 GB</p>
+                <p class="resolucion-asus">Resolucion: Full Hd (1920×1080)</p>
+                <p class="almacenamiento-asus">Almacenamiento: 128 GB</p>
+                <p class="graficos-asus">Graficos: Gráficos UHD Intel® Core™</p>
+                <p class="precioAsus">$302.999</p>
+            </div>
         </div>
         <div class="product4">
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/hp240.jpg" alt="" class="prodcuto1">
             <h3 class="nProduct1">Hp 240 G8 480Gb</h3>
-            <button class="informacio">▼</button>
+            <button class="informacionHp" onclick="dropInfoHP()">▼</button>
+            <div class="infor-menu-hp" id="infoHp" style="display: none;">
+                <h2 class="modeloHp">HP 240 G8 INTEL N4020</h2>
+                <p class="procesadorHp">Procesador: Intel® Celeron® N4020</p>
+                <p class="ramHp">Ram: DDR4 8GB 2400 Mhz</p>
+                <p class="resolucion-hp">Resolucion: 1366 x 768</p>
+                <p class="almacenamientoHp">Almacenamiento: 960 GB</p>
+                <p class="graficosHp">Graficos: Gráficos Intel® UHD 600</p>
+                <p class="preciohp">$359.995</p>
+            </div>
         </div>
     </div>
 
@@ -66,5 +105,6 @@
             <p class="infoDerechos">Derechos reservados FS</p>
         </footer>
     </div>
+    
 </body>
 </html>
