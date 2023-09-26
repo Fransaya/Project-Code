@@ -1,0 +1,45 @@
+/* Estilos para el contenedor principal */
+.secImagen-menu {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Estilos para el carrusel */
+.carrusel {
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out; /* Transición suave al cambiar de imagen */
+}
+
+/* Estilos para cada imagen en el carrusel */
+.imagen {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; /* Transición suave al cambiar de imagen */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los botones "Anterior" y "Siguiente" */
+.flechas {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button.anterior,
+button.siguiente {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button.anterior:hover,
+button.siguiente:hover {
+    background-color: #0056b3;
+}
