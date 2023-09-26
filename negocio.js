@@ -1,3 +1,40 @@
+
+//  codigo para dezplazamiento de imagenes de carrucel
+/*realizacion de carrusel de imagenes*/
+const imagenes=document.querySelectorAll(".imagen");
+const anterior=document.querySelector(".anterior");
+const siguiente=document.querySelector(".siguiente");
+
+let index=0
+anterior.addEventListener("click",function(){
+    actualizarCarrusel(index-1);
+})
+siguiente.addEventListener("click",function(){
+    actualizarCarrusel(index+1);
+})
+
+function actualizarCarrusel(newIndex){
+    imagenes[index].style.display="none";
+    index=(newIndex+imagenes.length)%imagenes.length;
+    imagenes[index].style.display="block";
+}
+
+actualizarCarrusel(0);
+
+const buttons=document.querySelectorAll("button[data-dir]");
+buttons.forEach(function(button){
+    button.addEventListener("click",function(){
+        const direccion=button.getAttribute(`data-dir`);
+        window.location.href=direccion;
+    })
+});
+
+
+
+
+
+
+
 /* FUNCION DE BUTON RELACION CON INFORMACION DE NOTEBOOK DELL PARA MUESTREO DE INFORMACION ABAJO DEL BUTTON*/
 
 
