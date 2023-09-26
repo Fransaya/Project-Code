@@ -7,14 +7,11 @@
 
 
 body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    background: #283048;
-    padding: 20px;
-
-}    
+    background-image: linear-gradient( #030314 ,#778dff);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    background-attachment: fixed;
+}
 
 .carrusel{
     width: 500px;
