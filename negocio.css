@@ -1,15 +1,54 @@
-/* Estilos generales */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 body {
     background-image: linear-gradient( #030314 ,#778dff);
     background-repeat: no-repeat;
     background-size: 100% 200%;
     background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 2s;
+    margin-right: 1%;
+    position: relative; /* Añade esta línea */
+}
+
+a:hover {
+    color: #778dff;
+}
+
+a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12%; /* Altura de la línea */
+    background-color: #778dff; /* Color de la línea */
+    transform: scaleX(0); /* Inicialmente la línea no se muestra */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1); /* Muestra la línea en el hover */
+    transform-origin: bottom left;
 }
 
 .carrusel{
