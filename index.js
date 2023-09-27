@@ -7,6 +7,7 @@ const passwords = ["admin123", "elMasBonitoDelBarrio", "jKL743_"]
 let emailEnvio=""
 botonLogin.addEventListener("click", () => {
     if (emails.indexOf(email.value) === passwords.indexOf(password.value)) {
+        window.parent.postMessage({email: email.value},"*");
         window.location.href = "negocio.html";
         console.log(`valor de email console index${emails.indexOf(email.value)}`);
         emailEnvio=email;
