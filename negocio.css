@@ -54,32 +54,30 @@ a:hover::after {
 }
 
 .carrusel{
-    width: 30%;
-    height: 40%;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
+    margin: 0% auto;
 }
 
 .imagen{
-    width: 100%;
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100%;
+    transition: transform 0.5s ease;
     
 }
 
 .slider{
-    width: calc(100% / 4);
-    height: 100%;
+    flex: 0 0 100%;
+    
 }
 /* Estilos para el contenedor principal */
 .slider img{
-    width: 500px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+    
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .pagPrincipal{

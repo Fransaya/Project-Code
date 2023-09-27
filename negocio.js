@@ -11,10 +11,11 @@ anterior.addEventListener("click",e =>MoveLeft());
 siguiente.addEventListener("click",e =>MoveRigth());
 
 function MoveLeft(){
-    
+    index+=25
+    slide.style.transform=`translate(+${index}$)`
 }
 function MoveRigth(){
-    index+=33.3
+    index-=25
     slide.style.transform=`translate(-${index}%)`
 }
 
