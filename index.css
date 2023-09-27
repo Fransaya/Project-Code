@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    border-radius: 5px;
 }
 
 body {
@@ -12,16 +13,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    border: 2px solid black;
-    padding: 50px;
-    width: 25vw;
+    background: linear-gradient( #030314 ,#778dff);
 }
 
 #bienvenida {
@@ -33,5 +25,62 @@ form {
     width: 50vw;
     height: 50vh;
     font-size: x-large;
+    background-color: #778dff;
+    border: 2px solid #030314;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #030314;
+    color: #030314;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    width: 25vw;
+    align-items: center;
+    border: 2px solid #030314;
+    border-radius: 5px;
+    background-color: #778dff;
+    box-shadow: 0 0 5px #030314;
+}
+form input {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #8ea1ff;
+    border: 2px solid #030314;
+    box-shadow: 0 0 5px #030314;
+}
+form a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#botonLogin {
+    width: 50%;
+    padding: 10px;
+    background-color: #030314;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    box-shadow: 0 0 5px #030314;
+    cursor: pointer;
+}
+#botonLogin:hover {
+    background-color: #030324;
+}
+
+#crearCuenta {
+    padding: 10px;
+    width: 80%;
+    border: 0;
+    background-color: #030314;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 0 5px #030314;
+    cursor: pointer;
+}
+#crearCuenta:hover {
+    background-color: #030324;
+}
