@@ -13,3 +13,13 @@ body {
     background-attachment: fixed;
 }
 
+header {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
