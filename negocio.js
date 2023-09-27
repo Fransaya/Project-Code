@@ -20,22 +20,29 @@ function MoveRigth(){
 }
 
 
+/// SECCION BUTTON CERRAR SECION REDIRECCIONAMIENTO AL INDEX;
+function cerrarSecion(){
+    window.location.href = "index.html";
+}
 
-// function actualizarCarrusel(newIndex){
-//     imagenes[index].style.display="none";
-//     index=(newIndex+imagenes.length)% imagenes.length;
-//     imagenes[index].style.display="block";
-// }
+/// FUNCTION PARA REDIRECCIONAMIENTO DE PAGINA EN VER DE CADA NOTEBOOK DE CARUSEL
 
-// actualizarCarrusel(0);
-
-// const buttons=document.querySelectorAll(`button[data-dir]`);
-// buttons.forEach(function(button){
-//     button.addEventListener("click",function(){
-//         const direccion=button.getAttribute(`data-dir`);
-//         window.location.href=direccion;
-//     })
-// });
+function redireccionar(argumento){
+    switch(argumento){
+        case `apple`:
+            window.location.href="./marcas/apple.html";
+            break;
+        case `dell`:
+            window.location.href="./marcas/dell.html";
+            break;
+        case `asus`:
+            window.location.href="./marcas/asus.html";
+            break;
+        case `hp`:
+            window.location.href="./marcas/hp.html";
+            break;
+    }   
+}
 
 
 
@@ -44,9 +51,6 @@ function MoveRigth(){
 
 
 /* FUNCION DE BUTON RELACION CON INFORMACION DE NOTEBOOK DELL PARA MUESTREO DE INFORMACION ABAJO DEL BUTTON*/
-
-
-
 function dropDown(){
     let button=document.querySelector(".informaciondell");
     let inforAdd=document.getElementById("infoAdd");
