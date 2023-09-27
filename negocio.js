@@ -7,34 +7,34 @@ const siguiente=document.querySelector(".siguiente");
 const slide=document.querySelectorAll(".slider");
 
 let index=0
+anterior.addEventListener("click",e =>MoveLeft());
+siguiente.addEventListener("click",e =>MoveRigth());
+
 function MoveLeft(){
-    anterior.addEventListener("click",function(){
-        actualizarCarrusel(index-1);
-    });
+    
 }
-
 function MoveRigth(){
-    siguiente.addEventListener("click",function(){
-        actualizarCarrusel(index+1);
-    });
+    index+=33.3
+    slide.style.transform=`translate(-${index}%)`
 }
 
 
-function actualizarCarrusel(newIndex){
-    imagenes[index].style.display="none";
-    index=(newIndex+imagenes.length)% imagenes.length;
-    imagenes[index].style.display="block";
-}
 
-actualizarCarrusel(0);
+// function actualizarCarrusel(newIndex){
+//     imagenes[index].style.display="none";
+//     index=(newIndex+imagenes.length)% imagenes.length;
+//     imagenes[index].style.display="block";
+// }
 
-const buttons=document.querySelectorAll(`button[data-dir]`);
-buttons.forEach(function(button){
-    button.addEventListener("click",function(){
-        const direccion=button.getAttribute(`data-dir`);
-        window.location.href=direccion;
-    })
-});
+// actualizarCarrusel(0);
+
+// const buttons=document.querySelectorAll(`button[data-dir]`);
+// buttons.forEach(function(button){
+//     button.addEventListener("click",function(){
+//         const direccion=button.getAttribute(`data-dir`);
+//         window.location.href=direccion;
+//     })
+// });
 
 
 

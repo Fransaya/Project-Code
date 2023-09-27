@@ -59,6 +59,7 @@ a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .imagen{
@@ -69,7 +70,7 @@ a:hover::after {
     justify-content: center;
     align-items: center;
     margin: 100%;
-    
+
 }
 
 .slider{
