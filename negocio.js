@@ -21,9 +21,23 @@ function MoveRigth(){
 
 
 /// SECCION BUTTON CERRAR SECION REDIRECCIONAMIENTO AL INDEX;
-function cerrarSecion(){
-    window.location.href = "index.html";
+function cerrarSecion(marcas){
+    switch (marcas){
+        case `principal`:
+            window.location.href = "index.html";
+            break;
+        case "marcas":
+            window.location.href = "../negocio.html";
+            break;
+    }
+    
 }
+
+
+// SECCION PARA MOSTRAR USUARIO EN EL INPUT DEL HEADER.
+let display="";
+let input=document.getElementById("diplayUsuario");
+
 
 /// FUNCTION PARA REDIRECCIONAMIENTO DE PAGINA EN VER DE CADA NOTEBOOK DE CARUSEL
 

@@ -8,5 +8,7 @@ const passwords = ["admin123", "elMasBonitoDelBarrio", "jKL743_"]
 botonLogin.addEventListener("click", () => {
     if (emails.indexOf(email.value) === passwords.indexOf(password.value)) {
         window.location.href = "negocio.html";
+        
     };
 });
+

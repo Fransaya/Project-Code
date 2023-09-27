@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="negocio.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="encabezado">
@@ -19,7 +20,8 @@
                 <a href="./encabezado/informacion.html" class="informacion">Información</a>
                 <a href="./encabezado/contacto.html" class="contacto">Contacto</a>
                 <a href="./encabezado/ubicacion.html" class="ubicacion">Ubicación</a>
-                <button class="closeSecion" onclick="cerrarSecion()" type="button">Cerrar Secion</button>
+                <input type="text" class="correoHeader" id="diplayUsuario" readonly>
+                <button class="closeSecion" onclick="cerrarSecion(`principal`)" type="button">Cerrar Secion</button>
             </header>
         </div>
     </div>
