@@ -54,40 +54,60 @@ a:hover::after {
 }
 
 .carrusel{
-    overflow: hidden;
-    width: 100%;
-    max-width: 600px;
+    width: 30%;
+    height: 40%;
     border-radius: 20px;
-    margin: 0% auto;
+    display: flex;
+    align-items: center;
+
 }
 
 .imagen{
-    
+    width: 100%;
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .slider{
-    flex: 0 0 100%;
-    
+    width: calc(100% / 4);
+    height: 100%;
 }
 /* Estilos para el contenedor principal */
 .slider img{
-    
-    max-width: 100%;
-    height: auto;
-    
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
-.pagPrincipal{
-    display: block;
-}
-
-.secImagen-menu {
+.anterior,
+.siguiente {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
 }
 
+.anterior:hover,
+.siguiente:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
