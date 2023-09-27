@@ -35,8 +35,8 @@ function cerrarSecion(marcas){
 
 
 // SECCION PARA MOSTRAR USUARIO EN EL INPUT DEL HEADER.
-let display="";
-let input=document.getElementById("diplayUsuario");
+// let displayInput=document.getElementById("displayUsuario");
+// displayInput.value=window.email;
 
 
 /// FUNCTION PARA REDIRECCIONAMIENTO DE PAGINA EN VER DE CADA NOTEBOOK DE CARUSEL
