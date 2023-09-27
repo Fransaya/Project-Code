@@ -52,14 +52,131 @@ a:hover::after {
 }
 
 .desc {
-    position: relative;
-    text-align: center;
-    margin: 5%;
-    left: 17.7em;
-    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
     font-size: 230%;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-    border: #fff dashed;
+    border: #00ffea dashed;
     color: #fff;
+    margin-top: 5%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 90%;
+}
+
+.info1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 90%;
+}
+
+.info2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 90%;
+}
+
+.valores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 180%;
+    font-weight: 900;
+    color: #fff;
+    border: #00ffea dashed;
+    margin-top: 4%;
+    margin-left: 30%;
+    margin-right: 50%;
+}
+
+.descValores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 50%;
+
+}
+
+.descValores1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 50%;
+}
+
+.mision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 180%;
+    font-weight: 900;
+    color: #fff;
+    border: #00ffea dashed;
+    margin-top: 1%;
+    margin-left: 50%;
+    margin-right: 30%;
+}
+
+.descMision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 50%;
+    margin-right: 30%;
+}
+
+.descMision1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1%;
+    margin-left: 50%;
+    margin-right: 30%;
 }
