@@ -1,23 +1,26 @@
 
 //  codigo para dezplazamiento de imagenes de carrucel
 /*realizacion de carrusel de imagenes*/
-const imagenes=document.querySelectorAll(".imagen");
-const anterior=document.querySelector(".anterior");
-const siguiente=document.querySelector(".siguiente");
-const slide=document.querySelectorAll(".slider");
+document.addEventListener("DOMContentLoaded",function(){
+    const imagenes=document.querySelectorAll(".imagen");
+    const anterior=document.querySelector(".anterior");
+    const siguiente=document.querySelector(".siguiente");
+    const slide=document.querySelectorAll(".slider");
 
-let index=0
-anterior.addEventListener("click",e =>MoveLeft());
-siguiente.addEventListener("click",e =>MoveRigth());
+    anterior.addEventListener("click",e =>MoveLeft());
+    siguiente.addEventListener("click",e =>MoveRigth());
+    let index=0
+    function MoveLeft(){
+        index+=25
+        slide.style.transform=`translate(+${index}$)`
+    }
+    function MoveRigth(){
+        index-=25
+        slide.style.transform=`translate(-${index}%)`
+    }
 
-function MoveLeft(){
-    index+=25
-    slide.style.transform=`translate(+${index}$)`
-}
-function MoveRigth(){
-    index-=25
-    slide.style.transform=`translate(-${index}%)`
-}
+})
+
 
 
 /// SECCION BUTTON CERRAR SECION REDIRECCIONAMIENTO AL INDEX;
@@ -35,6 +38,27 @@ function cerrarSecion(marcas){
 
 
 // SECCION PARA MOSTRAR USUARIO EN EL INPUT DEL HEADER.
+
+// function ObtenerCookie(name){
+//     var cookieVal=null;
+//     if(document.cookie && document.cookie!==``){
+//         var cookies=document.cookie.split(`;`);
+//         for(let i=0;i<cookies.length;i++){
+//             var cookie=cookies[i].trim();
+//             if(cookie.substring(0,name.length+1) === (name+`=`)){
+//                 cookieVal=decodeURIComponent(cookie.substring(name.length+1));
+//                 break;
+//             }
+//         }
+//     }
+//     console.log(`valor del email ${cookieVal}`)
+//     return cookieVal;
+// }
+const emailDisplay=document.getElementById("displayUsuario");
+window.addEventListener("message",(event)=>{
+    emailDisplay.value=event.data.email;
+})
+
 // let displayInput=document.getElementById("displayUsuario");
 // displayInput.value=window.email;
 
