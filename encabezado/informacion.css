@@ -50,3 +50,16 @@ a:hover::after {
     transform: scaleX(1); /* Muestra la línea en el hover */
     transform-origin: bottom left;
 }
+
+.desc {
+    position: relative;
+    text-align: center;
+    margin: 5%;
+    left: 17.7em;
+    width: 22%;
+    font-size: 230%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    border: #fff dashed;
+    color: #fff;
+}
