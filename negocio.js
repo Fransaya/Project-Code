@@ -2,24 +2,51 @@
 //  codigo para dezplazamiento de imagenes de carrucel
 /*realizacion de carrusel de imagenes*/
 document.addEventListener("DOMContentLoaded",function(){
-    const imagenes=document.querySelectorAll(".imagen");
-    const anterior=document.querySelector(".anterior");
-    const siguiente=document.querySelector(".siguiente");
-    const slide=document.querySelectorAll(".slider");
+    const slider=document.querySelector("#slider");
+    let sliderSection=document.querySelectorAll(".slider_section");
+    let sliderSectionUltimo=sliderSection[sliderSection.length-1];
 
-    anterior.addEventListener("click",e =>MoveLeft());
-    siguiente.addEventListener("click",e =>MoveRigth());
-    let index=0
-    function MoveLeft(){
-        index+=25
-        slide.style.transform=`translate(+${index}$)`
-    }
-    function MoveRigth(){
-        index-=25
-        slide.style.transform=`translate(-${index}%)`
+    const buttonIzquierda=document.querySelector("#left");
+    const buttonDerecha=document.querySelector("#rigth");
+
+    slider.insertAdjacentElement(`afterbegin`,sliderSectionUltimo);
+
+    function Move(){
+        let sliderSectionPrimero=document.querySelectorAll(".slider_section")[0];
+        slider.style.marginleft="-200%";
+        slider.style.transition="all 0.5s";
+        setTimeout(function(){
+            slider.style.transition="none";
+            slider.insertAdjacentElement(`beforeend`,sliderSectionPrimero);
+            slider.style.marginleft="-100%";
+        },500);
     }
 
+    function Prev(){
+        let sliderSection=document.querySelectorAll(".slider_section");
+        let sliderSectionLast=sliderSection[sliderSection.length-1];
+        slider.style.marginleft="0";
+        slider.style.transition="all 0.5s";
+        setTimeout(function(){
+            slider.style.transition="none";
+            slider.insertAdjacentElement(`afterbegin`,sliderSectionLast);
+            slider.style.marginleft="-100%";
+        },500);
+    }
+    buttonDerecha.addEventListener(`click`,function(){
+        Move();
+    });
+    
+    buttonIzquierda.addEventListener(`click`,function(){
+        Prev();
+    });
+
+    setInterval(function(){
+        Move();
+    },5000);
+    
 })
+
 
 
 
