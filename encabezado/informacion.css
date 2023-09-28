@@ -56,8 +56,8 @@ a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 41.5%;
     font-size: 230%;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -74,8 +74,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 2%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 40%;
     font-size: 90%;
 }
 
@@ -87,8 +87,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 40%;
     font-size: 90%;
 }
 
@@ -100,8 +100,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 18%;
+    margin-right: 40%;
     font-size: 90%;
 }
 
@@ -115,8 +115,8 @@ a:hover::after {
     color: #fff;
     border: #00ffea dashed;
     margin-top: 4%;
-    margin-left: 30%;
-    margin-right: 50%;
+    margin-left: 4%;
+    margin-right: 70%;
 }
 
 .descValores {
@@ -127,8 +127,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 30%;
-    margin-right: 50%;
+    margin-left: 4%;
+    margin-right: 70%;
 
 }
 
@@ -140,8 +140,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 30%;
-    margin-right: 50%;
+    margin-left: 4%;
+    margin-right: 70%;
 }
 
 .mision {
@@ -154,8 +154,8 @@ a:hover::after {
     color: #fff;
     border: #00ffea dashed;
     margin-top: 2%;
-    margin-left: 50%;
-    margin-right: 30%;
+    margin-left: 4%;
+    margin-right: 70%;
 }
 
 .descMision {
@@ -166,8 +166,8 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 50%;
-    margin-right: 30%;
+    margin-left: 4%;
+    margin-right: 70%;
 }
 
 .descMision1 {
@@ -178,6 +178,51 @@ a:hover::after {
     font-weight: 700;
     color: #fff;
     margin-top: 1%;
-    margin-left: 50%;
-    margin-right: 30%;
+    margin-left: 4%;
+    margin-right: 70%;
 }
+
+.piePag {
+    display: flex;
+    align-items: CENTER;
+    justify-content: CENTER;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-top: 2%;
+}
+
+.derechos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1.5vb;
+    color: #fff;
+}
+
+.infoDerechos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1.5vb;
+    color: #fff;
+}
+
+
+.material-symbols-outlined {
+    font-size: 7em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 51%;
+    left: 20%;
+    right: 50%;
+}
+
+
