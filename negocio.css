@@ -1,12 +1,10 @@
 
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
 
-body {
+body {  
     background-image: linear-gradient( #030314 ,#778dff);
     background-repeat: no-repeat;
     background-size: 100% 200%;
@@ -14,7 +12,43 @@ body {
     align-items: center;
     justify-self: center;
 }
+.container-slider{
+    width: 90%;
+    max-width: 900%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+.slider_section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.slider-button{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-button:hover{
 
+}
+.slider_btn--derecha{
+
+}
+.slider_btn--izquierda{
+
+}
 header {
     text-align: center;
     font-family: 'Inter', sans-serif;

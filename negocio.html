@@ -27,30 +27,27 @@
         </div>
     </div>
     <!--Divion de imagen principal, con menu desplazable lateralmente y direccionamiento a seccion marcas de pagina web-->
-    <div class="secImagen-menu">
-        <div class="carrusel">
-            <div class="imagen">
-                <section class="slider">
-                    <img src="./imagesFolder/MACBOOK-APPLE.png" alt="" class="product1Apple">
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider_section">
+                <img src="./imagesFolder/MACBOOK-APPLE.png" alt="" class="slider__img">
                 <button class="dirApple" onclick="redireccionar(`apple`)">Ver..</button>
-                </section>
-                <section class="slider">
-                    <img src="./imagesFolder/DELL-PNG.png" alt="" class="product2Dell">
-                    <button class="dirDell"  onclick="redireccionar(`dell`)" >Ver..</button>
-                </section>
-                
-                <section class="slider">
-                    <img src="./imagesFolder/ASUS-PNG.png" alt="" class="product3Asus">
-                    <button class="dirAsus"  onclick="redireccionar(`asus`)">Ver..</button>
-                </section>
-                
-                <section class="slider">
-                    <img src="./imagesFolder/HP-PNG.png" alt="" class="product3Hp">
-                    <button class="dirDell"  onclick="redireccionar(`hp`)">Ver..</button>
-                </section>
-                
+            </div>
+            <div class="slider_section">
+                <img src="./imagesFolder/DELL-PNG.png" alt="" class="slider__img">
+                <button class="dirDell"  onclick="redireccionar(`dell`)" >Ver..</button>
+            </div>
+            <div class="slider_section">
+                <img src="./imagesFolder/ASUS-PNG.png" alt="" class="slider__img">
+                <button class="dirAsus"  onclick="redireccionar(`asus`)">Ver..</button>
+            </div>
+            <div class="slider_section">
+                <img src="./imagesFolder/HP-PNG.png" alt="" class="slider__img">
+                <button class="dirDell"  onclick="redireccionar(`hp`)">Ver..</button>
             </div>
         </div>
+        <div class="slider-button slider_btn--derecha"><</div>
+        <div class="slider-button slider_btn--izquierda">></div>
     </div>
     <!-- Flechas desplazamiento -->
     <div class="flechasDesplazamiento">
@@ -77,8 +74,8 @@
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/DELL-PNG.png" alt="" class="prodcuto1">
             <h3 class="nProduct1">Dell Insipiron</h3>
-            <button class="informaciondell" onclick="dropDown()">▼</button>
-            <div class="infoAdicional" id="infoAdd" style="display: none;">
+            <button class=".dell" onclick="dropDown(`.dell`)">▼</button>
+            <div class="infoAdicional" id=".dell" style="display: none;">
                 <h2 class="modeloDell">Dell Inspiron 3501</h2>
                 <p class="procesador">Procesador: Intel Core I5 1135g7 </p>
                 <p class="ram"> Ram: 12 Gb</p>
@@ -92,8 +89,8 @@
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/MACBOOK-APPLE.png" alt="" class="prodcuto1">
             <h3 class="nProduct1">Apple MacBook M1</h3>
-            <button class="informacionapple" onclick="dropInfoApple()">▼</button>
-            <div class="infoAdicionalApple" id="inforapple" style="display: none;">
+            <button class=".apple" onclick="dropDown(`.apple`)">▼</button>
+            <div class="infoAdicionalApple" id=".apple" style="display: none;">
                 <h2 class="modeloapple"> MacBook M1</h2>
                 <p class="procesadorApple">Procesador: Apple M1 Chip 8-Nucleos CPU M1</p>
                 <p class="ramapple">Ram: 8Gb </p>
@@ -107,8 +104,8 @@
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/ASUS-PNG.png" alt="" class="prodcuto1">
             <h3 class="nProduct1">Asus 14 E410Ka</h3>
-            <button class="informacioAsus" onclick="dropinforAsus()">▼</button>
-            <div class="infor-menu-Asus" id="infoasus" style="display: none;">
+            <button class=".asus" onclick="dropDown(`.asus`)">▼</button>
+            <div class="infor-menu-Asus" id=".asus" style="display: none;">
                 <h2 class="modeloAsus">Modelo: VivoBook E410KA-EK407W</h2>
                 <p class="procesadorAsus">Procesador: Intel® Pentium® Silver N6000</p>
                 <p class="ram-asus">Ram: 4 GB</p>
@@ -122,8 +119,8 @@
             <!-- imagen del producto y descipcion-->
             <img src="./imagesFolder/HP-PNG.png" alt="" class="prodcuto1">
             <h3 class="nProduct1">Hp 240 G8 480Gb</h3>
-            <button class="informacionHp" onclick="dropInfoHP()">▼</button>
-            <div class="infor-menu-hp" id="infoHp" style="display: none;">
+            <button class=".hp" onclick="dropDown(`.hp`)">▼</button>
+            <div class="infor-menu-hp" id=".hp" style="display: none;">
                 <h2 class="modeloHp">HP 240 G8 INTEL N4020</h2>
                 <p class="procesadorHp">Procesador: Intel® Celeron® N4020</p>
                 <p class="ramHp">Ram: DDR4 8GB 2400 Mhz</p>
